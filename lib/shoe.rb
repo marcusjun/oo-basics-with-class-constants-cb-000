@@ -10,11 +10,11 @@ class Shoe
 
   def brand=(brand)
     @brand=brand
-    BRANDS<<brand
+    #BRANDS<<brand
     #BRANDS.each do |name|
-    #if BRANDS.none? {|name| name==brand}
-      #BRANDS<<brand
-    #end
+    BRANDS.none? {|name| name==brand}
+      BRANDS<<brand
+    end
   end
 
   def cobble
