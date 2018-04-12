@@ -12,14 +12,14 @@ class Shoe
     end
   end
 
-  #def brand=(brand)
-    #@brand=brand
+  def brand=(brand)
+    @brand=brand
     #BRANDS<<brand
     #BRANDS.each do |name|
     #if BRANDS.none? {|name| name===brand}
       #BRANDS<<brand
     #end
-  #end
+  end
 
   def cobble
     self.condition = "new"
