@@ -12,7 +12,7 @@ class Shoe
     @brand=brand
     #BRANDS<<brand
     #BRANDS.each do |name|
-    BRANDS.none? {|name| name==brand}
+    if BRANDS.none? {|name| name===brand}
       BRANDS<<brand
     end
   end
