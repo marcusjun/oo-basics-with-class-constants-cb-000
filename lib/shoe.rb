@@ -6,7 +6,10 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS<<brand
+    #BRANDS<<brand
+    if BRANDS.none? {|name| name===brand}
+      BRANDS<<brand
+    end
   end
 
   #def brand=(brand)
