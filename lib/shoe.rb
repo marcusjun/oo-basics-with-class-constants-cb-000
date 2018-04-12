@@ -6,16 +6,17 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    BRANDS<<brand
   end
 
-  def brand=(brand)
-    @brand=brand
+  #def brand=(brand)
+    #@brand=brand
     #BRANDS<<brand
     #BRANDS.each do |name|
-    if BRANDS.none? {|name| name===brand}
-      BRANDS<<brand
-    end
-  end
+    #if BRANDS.none? {|name| name===brand}
+      #BRANDS<<brand
+    #end
+  #end
 
   def cobble
     self.condition = "new"
